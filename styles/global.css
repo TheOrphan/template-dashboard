@@ -1,0 +1,161 @@
+@layer mantine, mantine-datatable;
+
+div,
+button,
+svg,
+a,
+p,
+img {
+  transition:
+    width 0.1s,
+    height 0.1s,
+    display 0.1s;
+  transition-timing-function: ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: normal;
+  font-style: normal;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  max-height: 500px;
+  padding-right: 10px;
+}
+
+.mantine-Card-section table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: var(--mantine-radius-default);
+  overflow: hidden;
+}
+.mantine-Card-section tr th {
+  background-color: var(--mantine-color-default);
+}
+.mantine-Card-section tr th:nth-child(1) {
+  border-radius: var(--mantine-radius-default) 0 0 0;
+  padding-left: 14px;
+  padding-right: 4px;
+}
+.mantine-Card-section tr th:nth-last-child(1) {
+  border-radius: 0 var(--mantine-radius-default) 0 0;
+}
+.mantine-Card-section tr:nth-last-child(1) td:nth-child(1) {
+  border-radius: 0 0 0 var(--mantine-radius-default);
+}
+.mantine-Card-section tr:nth-last-child(1) td:nth-last-child(1) {
+  border-radius: 0 0 var(--mantine-radius-default) 0;
+}
+
+.mantine-Table-th {
+  font-weight: normal;
+  font-size: 0.83rem;
+}
+
+.rbc-today {
+  background-color: initial;
+}
+
+.rbc-header {
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+.header-day {
+  color: var(--mantine-color-dimmed);
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+}
+
+.red-color-date {
+  color: var(--mantine-color-red-text);
+}
+.rbc-day-slot .rbc-event-content {
+  font-size: 1rem;
+}
+
+.rbc-event-content,
+.rbc-button-link.rbc-show-more {
+  font-size: 0.73rem;
+}
+
+.rbc-button-link.rbc-show-more {
+  color: var(--mantine-color-text);
+  font-weight: normal;
+  padding: 1px 5px;
+}
+
+.rbc-button-link.rbc-show-more:hover {
+  text-decoration: underline;
+}
+
+.rbc-event,
+.rbc-day-slot .rbc-background-event,
+.rbc-event.rbc-selected,
+.rbc-day-slot .rbc-selected.rbc-background-event {
+  background-color: var(--mantine-primary-color-light-hover);
+  color: var(--mantine-color-text);
+  border-radius: var(--mantine-radius-xl);
+  border: solid 1px var(--mantine-color-default-border);
+  padding: 1px 5px;
+}
+
+.rbc-date-cell > button {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.rbc-date-cell.rbc-now > button {
+  background-color: var(--mantine-primary-color-filled);
+  color: var(--mantine-color-white);
+  padding: 0 3px;
+  border-radius: 4px;
+}
+
+.rbc-date-cell {
+  text-align: left;
+  padding: 5px 10px;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  * {
+    box-shadow: none !important;
+  }
+
+  .svgContainer {
+    page-break-before: always !important;
+    -webkit-page-break-before: always !important;
+    margin-top: 3rem !important;
+  }
+
+  svg g text {
+    fill: black !important;
+  }
+
+  table {
+    border-collapse: unset !important;
+    border-spacing: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  table td,
+  table th {
+    border-radius: 0 !important;
+    border: 1px solid black !important;
+  }
+}

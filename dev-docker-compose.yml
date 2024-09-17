@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  web:
+    image: wcd:latest
+    ports:
+      - "3000:3000"
+    environment:
+      TZ: "Asia/Jakarta"
+    deploy:
+      mode: replicated
+      replicas: 1
+      update_config:
+        failure_action: rollback
+        delay: 5s

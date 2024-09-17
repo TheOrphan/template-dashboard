@@ -1,0 +1,14 @@
+.input {
+  color: var(--mantine-color-white);
+  border-bottom: solid 1px var(--mantine-color-white);
+  border-radius: 0;
+}
+
+.alert {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.btnLogin:disabled {
+  background-color: var(--button-bg, var(--mantine-primary-color-filled));
+  color: var(--button-color, var(--mantine-color-white));
+}

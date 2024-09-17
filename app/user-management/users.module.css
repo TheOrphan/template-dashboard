@@ -1,0 +1,10 @@
+.tableCustom {
+  border: none;
+}
+
+.headerCustom {
+  th {
+    background-color: #f9d7ac;
+    color: #593b15;
+  }
+}

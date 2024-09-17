@@ -1,0 +1,15 @@
+export const rbac = [
+  { path: '/no-access', rolesAllowed: ['STAFF', 'GUEST'] },
+  { path: '/login', rolesAllowed: ['STAFF', 'GUEST'] },
+  { path: '/home', rolesAllowed: ['STAFF'] },
+  { path: '/profile', rolesAllowed: ['STAFF'] },
+  { path: '/products', rolesAllowed: ['STAFF'] },
+  { path: '/products/detail', rolesAllowed: ['STAFF'] },
+  { path: '/products/edit', rolesAllowed: ['STAFF'] },
+  { path: '/warranty-claims', rolesAllowed: ['STAFF'] },
+  { path: '/warranty-claims/detail', rolesAllowed: ['STAFF'] },
+  { path: '/warranty-claims/edit', rolesAllowed: ['STAFF'] },
+  { path: '/user-management', rolesAllowed: ['STAFF'] },
+  { path: '/user-management/detail', rolesAllowed: ['STAFF'] },
+  { path: '/user-management/edit', rolesAllowed: ['STAFF'] },
+];

@@ -1,0 +1,10 @@
+.alarm {
+  border-radius: var(--mantine-radius-xl);
+}
+
+.newInvitation {
+  border-radius: var(--mantine-radius-default);
+  border: 2px dashed #000000;
+  cursor: pointer;
+  height: 100%;
+}
